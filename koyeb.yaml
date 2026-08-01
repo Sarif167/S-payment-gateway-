@@ -1,0 +1,8 @@
+version: v1
+services:
+  - name: s-payment-gateway
+    type: web
+    docker:
+      # Static HTML ke liye Nginx image use kar sakte hain
+      image: nginx:alpine
+      
