@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Pay - Payment Gateway</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-xl font-bold">S-Pay-Getaway</div>
+        <div>
+            <button class="bg-purple-600 px-4 py-2 rounded-lg">Menu</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 px-4">
+        <span class="bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full font-semibold">Trusted payment gateway</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mt-4">Grow more. Do more. <br><span class="text-purple-400">Be more.</span></h1>
+        <p class="text-gray-400 mt-4 max-w-xl mx-auto">Payment solutions built to work for your business — fast checkouts, secure transactions, and tools that scale.</p>
+        <div class="mt-8 flex justify-center gap-4">
+            <button class="bg-amber-500 text-black font-semibold px-6 py-3 rounded-xl">Get Started</button>
+            <button class="bg-white text-black font-semibold px-6 py-3 rounded-xl">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- Code Preview Section for Developers -->
+    <section class="max-w-4xl mx-auto p-6 bg-slate-800 rounded-2xl my-10 border border-slate-700">
+        <div class="flex gap-4 border-b border-slate-700 pb-3 text-sm text-gray-400">
+            <span class="text-white font-bold border-b-2 border-purple-500 pb-3">Node JS</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>PHP</span>
+            <span>cURL</span>
+        </div>
+        <pre class="text-xs text-green-400 overflow-x-auto mt-4">
+<code>
+var request = require('request');
+var options = {
+  method: 'POST',
+  url: 'https://api.s-pay-getaway.com/pg/orders',
+  body: JSON.stringify({ order_amount: 485.01 })
+};
+request(options, function (error, response) {
+  console.log(response.body);
+});
+</code>
+        </pre>
+    </section>
+
+</body>
+</html>
+
